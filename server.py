@@ -18,7 +18,7 @@ PASSWORD_SALT = "9dcac779470489c0f915596efb3f5cbf26ef078d6e495b770b662b6f895ab9f
 
 
 def sign_data(data: str) -> str:
-    """Возвращает подписаннные данные data"""
+    """Возвращает подписаннные данные data1"""
     return hmac.new(
         SECRET_KEY.encode(),
         msg=data.encode(),
